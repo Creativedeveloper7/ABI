@@ -1,0 +1,1447 @@
+
+/* index.html */
+/* Hero section */
+#index{
+display: flex;
+
+}
+
+
+#index h1{
+font-size: 50px;
+color: #f6a02a;
+text-align: start;
+font-family: century gothic;
+ letter-spacing: -2px;
+
+}
+
+
+#index h2{
+font-family: century gothic;
+color:#ddd;
+text-align: start;
+font-style: italic;
+ font-weight: 200;
+ font-size: 15px;
+text-align: right;
+}
+#index p {
+font-size: 14px;
+max-width: 500px;
+text-align: left;
+margin-top: 5px;
+align-items: center;
+display: flex;
+}
+
+#Header {
+  position: fixed; /* Fix the header to the top */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  right: 0; /* Align to the right of the viewport */
+ background-color: none;
+  z-index: 1000; /* Ensure it's on top of other content */
+  padding: 0px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+
+
+.video-container2 {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+/* Styling the video to fill the entire container */
+.video-container2 video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -14; /* Send the video behind content */
+  object-fit: cover;
+  opacity: 60%;
+}
+
+/* Content overlay on top of the video */
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+
+#title{
+margin-bottom: 50px;
+
+color: #008080;
+
+}
+#title h2 {font-size: small;
+  padding-left: 20px;
+  text-align: end;
+  padding: 10px 20px ;;
+color: #e2e2e2;
+background-color:#008080;
+border-radius: 3px;
+font-size: 24px;
+
+}
+
+/* Default styling for desktop */
+
+
+.news-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive columns */
+  grid-gap: 20px; /* Space between grid items */
+max-width: 1600px;
+justify-content: center;
+margin-left: 80px;
+margin-right: 80px;
+}
+
+
+.news-item {
+ 
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically in grid item */
+  align-items: center;
+  text-align: start;
+  border: 1px solid none;
+  border-style: hidden;
+  box-shadow: 2px 2px 8px 4px rgba(155, 155, 155, 0.3);
+
+  padding: 20px;
+  border-radius: 4px;
+ 
+  color: #202124;
+  font-size: 10px;
+}
+
+.news-icon {
+ 
+  object-fit: cover;
+  max-height: 200px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.news-icon img{
+  border-radius: 3px;
+  object-position: 100%;
+}
+
+.news-content {
+  max-width: 100%;
+}
+
+.news-title {
+font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family:  "Roboto", sans-serif;
+  color: #2c2c2c;
+}
+
+.news-description {
+  margin-top: 10px;
+}
+
+.read-more {
+  color:#ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+
+#title button {
+  padding: 15px;
+ display: inline-block;
+ background-color: #008080;
+ border: none;
+ border-radius: 2px;
+ color: #ddd;
+}
+
+#banner {
+
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    overflow: hidden; /* Hide any overflow if the image doesn't fit exactly */
+}
+
+/* Image styling for the banner */
+#banner img {
+    width: 100%; /* Makes the image responsive and fills the width of the container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+
+
+
+
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+  .news-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .news-icon {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+  }
+  
+  .news-content {
+      width: 100%;
+  }
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.news-item img {
+  width: 300px;
+  height: 300px;
+ 
+  border-radius: 2%;
+}
+.news-content {
+  max-width: 600px;
+}
+.news-content h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+.news-content p {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+.news-content a {
+  color:#818181;
+  text-decoration: none;
+  font-size:10px;
+  font-style: italic;
+}
+.banner img{
+    width:100%; /* Full width on mobile */
+    max-height: 300px; /* Optional: Limit height if the image is too large on small screens */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+
+
+
+ 
+
+
+/* General Reset */
+
+  /* Navbar styling */
+ /* Default navbar style (for desktop view) */
+ #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  list-style: none;
+  padding: 30px 0px 50px 20px;
+  background-color: #ffffffcc;
+  position: fixed;
+  top: 5px;
+  color: #ddd;
+  width: 100%;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* Navbar item styles */
+#navbar li {
+
+  display: flex;
+  gap: 70px;
+  margin: 0 70px; /* Smaller gap */
+
+}
+
+#navbar li a {
+  text-decoration: none;
+  color:#535353;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Hamburger icon (hidden by default) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+ 
+}
+
+.hamburger i {
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  /* Hide the navbar by default on small screens */
+  #navbar {
+      display: none;
+      top: 0px; /* Adjust based on your header height */
+   position: absolute;
+   padding: 40px 10px; /* Spacing for desktop */
+   text-align: left; /* Align text for desktop */
+   margin-bottom: 20px;
+   background-color: rgba(245, 245, 245, 0.8); /* Add a background to the navbar */
+  }
+
+  /* Show the navbar when the 'show' class is added */
+  #navbar.show {
+      display: flex;
+  }
+
+  /* Show the hamburger icon in mobile view */
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+  /* Ensure navbar items stack vertically on mobile */
+  #navbar li {
+    padding: 20 15px; /* Spacing for desktop */
+    text-align: left; /* Align text for desktop */
+      position: relative;
+     font-weight: 600;
+      text-align: center;
+      border-bottom: #008080;
+      color:#969696;
+      border-bottom:0.1px solid #181818;
+      gap: 60px;
+      padding: 200 15px; /* Spacing for desktop */
+        ; /* Align text for desktop */
+        margin-bottom: 0
+
+}
+
+  
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+
+}
+
+
+/*blog.html*/
+
+
+
+
+body {
+    font-family: century gothic;
+   
+    background-color: #ffffff;
+    font-weight: 200;
+    font-size: 14px;
+ 
+}
+
+
+#hero h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: century gothic;
+ 
+
+
+}
+  
+  /* Video Grid */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 per row on desktop, flexible on smaller screens */
+    gap: 20px; /* Space between the videos */
+    max-width: 1900px; /* Maximum width for the grid container */
+    margin: 0 10px;
+    align-content: center;
+   align-items: center;
+   justify-content: center;
+
+  }
+  
+   
+  
+  /* Video Container */
+  .video-container {
+    background-color: rgb(20, 20, 20);
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .video-container:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  /* Video Player Styling */
+  video {
+    width: 100%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* Video Title */
+  .video-title {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: start;
+    background-color: #000000; /* Green background */
+    color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .tshirt-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-grid {
+      flex-direction: column; /* Stacks videos vertically */
+      align-items: center;
+  }
+
+  .video-container {
+      flex: 1 1 100%; /* Makes each video take full width */
+      max-width: 100%;
+  }
+}
+ 
+  
+
+  
+  
+
+
+
+
+/* shop.html */
+
+/* Basic styling for the header */
+
+  /* Optional: Media query to adjust header size on smaller devices */
+ 
+  
+
+
+    #hero3{ 
+      
+    
+       align-items: center;
+       align-content: center;
+
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+       
+        margin-top: 50px;
+        list-style: none;
+    text-align: center;
+    margin: 0,auto;
+     
+  font-size: 15px;
+      width: 100%;
+    height: auto;
+    
+    justify-content: center;
+    display: flex;
+    gap: 70px;
+
+    }
+    
+    
+  
+        
+    
+        
+
+
+   
+/* shop.html */
+
+/* Styling for the clickable image icon */
+.icon-link {
+   display: inline-block;
+    text-decoration: none; /* Remove underline on image */
+    justify-content: center;
+   
+  }
+  .button-container {
+position: relative;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    margin-top: 20px; /* Adjusts spacing above the buttons if needed */
+}
+  .icon-link2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+   
+   border-bottom:#168d8f;
+
+    cursor: pointer;
+}
+
+  .icon-image {
+    width: 200px; /* Adjust the size of the image */
+    height: auto; /* Ensure the image is square or use auto for dynamic sizing */
+    border-radius: 5%; /* Makes the image circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect to scale and add shadow */
+  .icon-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+
+
+    /* Styling for the Shop Now button */
+.shop-now-btn {
+    display: block;
+    margin-top: 10px; /* Space between image and button */
+    padding: 10px 20px;
+    background-color: none;
+border-color: #969696;
+   border-style: inherit;
+    border-radius: px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow */
+  }
+  
+  /* Button hover effect */
+  .shop-now-btn:hover {
+    background-color:#168d8f;
+    color: #ddd; /* Darken the button color on hover */
+  }
+
+  @media (max-width: 768px) {
+}
+
+
+#hero3{
+border: none;
+border-color: none;
+color: #008080;
+}
+
+/* Price details */
+.price-details {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  color:#008080;
+
+  text-align: left;
+  padding-left: 20px;
+text-decoration: dashed;
+  padding-right: 20px;
+ 
+}
+.price-details h4{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+padding-right:10px;
+font-size: 12px;
+padding-top: 20px;
+
+
+}
+.tshirt-details h4{
+  font-size: 17px;
+  color:#252525;
+  text-align: LEFT;
+
+ 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 600;
+padding-top: 10px;
+}
+.tshirt-details {
+  font-size: 15px;
+  color:#494b4b;
+  text-align: right;
+  padding-left: 20px;
+  font-weight: lighter;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 600;
+padding-right: 10px;
+}
+.tshirt-details button{
+  font-size: 9px;
+  background-color: #008080;
+  border: none;
+  border-radius: 2px;
+  padding: 9px 20px 9px 20px;
+  box-shadow: #000000;
+}
+.tshirt-details button:hover{
+
+ transform: scale(1.05);
+ background-color: #dd6f15;
+}
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .tshirt-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/* sproduct.html */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: century gothic;
+}
+
+body {
+  padding: 40px;
+align-content: center;
+ 
+}
+
+/* Existing styles */
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  
+  margin: 70px auto;
+  background-color: none;
+  border: solid  none;
+  padding: 0px;
+  box-shadow: 0 4px px rgba(99, 99, 99, 0.1);
+  border-radius: 8px;
+}
+
+/* Mobile layout adjustment */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    height: auto; /* Stack image and details vertically */
+    align-items: start;
+  }
+
+  .product-image img {
+    max-width: 100%; /* Make the image responsive */
+    margin-bottom: px; /* Add space between image and details */
+  }
+
+  .product-details {
+    text-align: start; 
+    font-size: 10px;/* Center-align the product details */
+  }
+
+  .product-details h1 {
+    font-size: 30px; /* Reduce font size for better mobile display */
+  }
+
+  select, input[type="number"] {
+    width: 10%; /* Make inputs take full width on mobile */
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 5%;
+}
+
+.product-details {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-top: 15%;
+}
+
+.product-details h1 {
+  font-family: century gothic;
+  font-size: 50px;
+  color: #1b1b1b;
+ 
+  margin-bottom: 10px;
+}
+
+.product-details .price {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color:#168d8f;
+  margin-bottom: 15px;
+}
+
+.product-details .description {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+button.add-to-cart {
+  background-color: #168d8f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button.add-to-cart:hover {
+  background-color: #f6a02a;
+}
+
+/* Styling for the select dropdown */
+select {
+  text-align: center;
+  width: 100px;
+  border-radius: 2px;
+
+ background-color: none;
+  font-size: 10px;
+  color: rgb(49, 49, 49);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+  
+}
+
+select:hover, select:focus {
+  border-color:white;
+}
+
+/* Styling for the input number field */
+input[type="number"] {
+
+
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid  #168d8f;
+  font-size: 12px;
+  color:  #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:hover, input[type="number"]:focus {
+  border-color: #168d8f;
+}
+
+/* Optional: Style the container holding both elements */
+.container {
+  display:100%;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin: 30px;
+}
+
+
+#banner video {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adding some responsiveness */
+@media (max-width: 768px) {
+    #paragraph h1 {
+        font-size: 20px;
+    }
+
+    #paragraph p, #paragraph ul li {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Stack header elements vertically */
+    #Header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Stack navbar items vertically */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust hero section font size for mobile */
+    #hero h1 {
+        font-size: 1.8em;
+    }
+
+ 
+    }
+#footer h1{
+    font-size: 1.8em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+
+    /* Make video full width on smaller screens */
+    #media-section video {
+        max-width: 100%;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Style for the container */
+    #border {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    
+    
+    }
+    
+    /* Make the image responsive */
+    #border img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover; /* Ensures the image fits well within its container */
+        border-radius: 5px; /* Optional: gives rounded corners */
+    }
+    
+    /* Mobile responsive design */
+    @media screen and (max-width: 768px) {
+        #border {
+            max-width: 100%;
+            padding: 5px;
+        }
+    }
+    
+    /* Smaller screens (phones) */
+    @media screen and (max-width: 480px) {
+        #border {
+            padding: 2px;
+        }
+    
+        #border img {
+            border-radius: 3px; /* Slightly smaller border-radius for mobile */
+        }
+    }
+#image-slider {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height:400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: auto; /* Adjust width based on the number of slides (100% * number of slides) */
+    animation: slideAnimation 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Mobile responsive design */
+@media screen and (max-width: 768px) {
+    #footer {
+        max-width: 100%;
+        padding: 5px;
+    }
+}
+
+/* Smaller screens (phones) */
+@media screen and (max-width: 480px) {
+    #footer {
+        padding: 2px;
+    }
+
+    #footer img {
+        border-radius: 3px; /* Slightly smaller border-radius for mobile */
+    }
+
+
+
+}
+
+/* Cart Section */
+.cart-page {
+  background-color: #1b1b1b; /* Replace with your desired color */
+  margin: 0; /* Removes default margin around body */
+
+}
+#cart {
+width: 100%;
+
+ margin-top: 100%;
+  max-width: 1600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+ 
+ gap: 20%;
+  margin: 170px auto;
+  background-color: none;
+  border: solid  none;
+  padding: 0px;
+
+
+}
+
+
+#cart h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  font-family: century gothic;
+  color:#ffffff;
+}
+
+
+.cart-item {
+font-size: 12px;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+  color:#fafafa;  
+    border-bottom: 1px solid #646464;
+    gap: 1rem; /* Adds gap between the elements */
+    max-width: 1800px;
+    font-family: century gothic;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.cart-item h4 {
+  display: table-column;
+  font-size: 12px;
+flex: none;
+font-family: century gothic;
+  color:#e9e9e9;
+}
+
+.cart-item input {
+  width: 30px;
+ gap: 50px;
+  border-radius: 2px;
+ color: #2c2c2c;
+align-items: center;
+background-color: none;
+font-size: 600;
+}
+
+.cart-item .fa-trash {
+  color:#252525;
+  cursor: pointer;
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.cart-item .fa-trash:hover {
+  color:#dd6f15;
+}
+
+/* Coupon Section */
+/* Coupon and Subtotal Container Styling */
+#coupon  {
+
+  margin-top: 20px;
+  padding: 20px;
+  position: flex; /* Use 'fixed' for persistent scrolling */
+  align-items: flex-end;
+  right: 0; /* Aligns element to the right */
+  bottom: 0; /* Aligns element to the bottom if needed */
+}
+.subtotal {
+
+  margin-top: 20px;
+  padding: 40px;
+  position: relative; /* Use 'fixed' for persistent scrolling */
+  align-items: flex-start;
+  right: 0; /* Aligns element to the right */
+  bottom: 0; /* Aligns element to the bottom if needed */
+}
+
+/* Coupon Input Field Styling */
+#coupon input {
+  margin-top: 70px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: none;
+}
+
+/* Coupon Button Styling */
+#coupon button {
+  padding: 0.5rem 1rem;
+  background-color: #3b3b3b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Subtotal Table Styling */
+.subtotal table {
+  margin-top: 3rem;
+  margin-left: 20px;
+  font-family: "Century Gothic", sans-serif;
+  padding: 40px 70px 40px 100px;
+  background-color: #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Consistent box-shadow format */
+  background-color:none;
+}
+
+/* Subtotal Table Data Styling */
+.subtotal td {
+  font-family: monospace;
+  font-weight: 400;
+  color: #202020dc;
+  font-size: 14px;
+  text-decoration: solid #008080;
+  text-decoration: underline #2c2c2c;
+  text-align: right;
+}
+
+/* Normal Button Styling */
+#normal button {
+margin-left: 180px;
+  margin-bottom: 20px;
+  padding: 0.5rem 1rem;
+  background-color:#008080;
+  color: #fdfdfd;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Consistent box-shadow format */
+
+  position:flex;
+}
+.normal.button :hover{
+color: #f6a02a;
+
+
+}
+#container{
+  border-radius: 5px;
+background-color:#202020;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+max-width: 1000px;
+margin-top: 20px;
+border-radius: 5px;
+
+* Optional: adds space inside the container */
+}
+
+/* Styling for the small image */
+.small-image {
+width: 150px; /* Adjust the width as desired */
+height: auto;
+margin: 40px; /* Optional: space around the image */
+float: right; /* Optional: aligns the image to the right within the container */
+border-radius: 5px; /* Matches the container’s rounded corners */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-items {
+      grid-template-columns: 1fr;
+  }
+
+  #Header ul {
+      display: none;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  #coupon {
+      flex-direction: column;
+  }
+
+  #coupon input {
+      width: 50%;
+      margin-bottom: 1rem;
+  }
+  #subtotal table {
+width: 100%;
+margin-bottom: 1rem;
+  }
+}
+
+/* Hero Section Styles */
+#hero-1 {
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+}
+
+.hero-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #3f3f3f;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.hero-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-item:hover{
+  transform: scale(1.05);
+}
+.hero-item button{background-color: none;
+color: #f3f3f3;
+padding: 5px 20px 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.hero-item button:hover{
+  transform: scale(1.05);
+  background-color:#008080;
+
+}
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .hero-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-grid {
+      grid-template-columns: 1fr;
+  }
+}
+#hero button{
+  box-shadow: #969696;
+  padding: 1rem 3rem;
+  background-color: #008080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+
+}
+/* Slider Container */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  position: relative;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*payout.html */
+
+/* Payout Section */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.container h2 {
+  text-align: start;
+  color:#0097b2;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.payout-form {
+  flex: 1;
+ 
+}
+
+.payout-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.payout-form input[type="text"],
+.payout-form input[type="email"],
+.payout-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  resize: vertical;
+  font-family:century gothic;
+}
+
+/* Payment Method Icons */
+.payment-method {
+  display: flex;
+  gap: 20px;
+}
+
+.payment-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 15px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.payment-option i {
+  font-size: 24px;
+  color:#005bb5;
+}
+.payment-option2 i {
+  font-size: 24px;
+  color:#004297;
+  margin-top: 15px;
+}
+
+
+.payment-option span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.payment-option.selected {
+  border-color: #0073e6;
+  color: #0073e6;
+}
+
+/* Billing Information Card Styling */
+.billing-info {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.billing-info h3, .billing-info h4 {
+  color: #333;
+}
+
+.billing-info p {
+  margin: 5px 0;
+}
+
+/* Submit Button Styling */
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  background-color:#0097b2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #005bb5;
+}
